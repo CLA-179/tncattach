@@ -25,7 +25,7 @@ install:
 	$(INSTALL) -d $(DESTDIR)/$(PREFIX)/bin
 	$(INSTALL) -Dm755 tncattach $(DESTDIR)/$(PREFIX)/bin/tncattach
 	@echo "Installing man page..."
-	gzip -9 tncattach.8
+	gzip -9 -k tncattach.8
 	$(INSTALL) -d $(DESTDIR)/$(PREFIX)/share/man/man8
 	$(INSTALL) -Dm644 tncattach.8.gz $(DESTDIR)/$(PREFIX)/share/man/man8/tncattach.8.gz
 
